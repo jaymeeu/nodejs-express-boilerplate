@@ -5,10 +5,6 @@ import Auth from "../middlewares/auth.js";
 
 const userRoutes = Router();
 
-
-
-
-
 userRoutes.get('/', Auth, getAllUsers);
 userRoutes.get('/:id', getUserById);
 userRoutes.post('/', saveUser);
